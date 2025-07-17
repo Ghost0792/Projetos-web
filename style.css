@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background:url('imagens/img.jpg');
+  background-size: cover ;
+  background-position: center;
+  
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  background-color: #000000a7;
+  backdrop-filter:blur(15px);
+  -webkit-backdrop-filter:blur(15px) ;
+  gap: 60px;
+  align-items: center ;
+  border: 1px solid #ffffff92;
+  box-shadow: 2px 3px 8px #0000005b ;
+  width:90%;
+  height: auto;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+h1{
+  text-align: center;
+  color: #eeeeee;
+  font-size: 2.3em;
+  font-weight: 800;
+  padding-top: 15px;
+}
+
+
+.box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color:#7f08f078;
+  width:90%;
+  height: 60px;
+  padding: 20px;
+  border-radius: 50px;
+  border: 1px solid #ececec76;
+  
+  
+}
+
+.box > input{
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+  color:white;
+  
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+  -webkit-text-fill-color: white !important;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+.box:hover{
+  transform: translate(0px,-4px);
+  box-shadow: 0px 1px 2px #00000069 ;
+  border-top:2px solid white;
+  border-right:2px solid white;
+  border-left:2px solid white;
+  border-bottom:2px solid white;
+  transition: transform 1.5s ease,border-bottom 1.5s ease, border-left 2.1s ease, border-right 2.1s ease, border-top 2.8s ease;
+}
+
+
+
+.box > input::placeholder{
+  color: #f5f5f5;
+  
+  
+}
+
+button{
+  background-color:#eeeeee ;
+  color: black;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0px 1px 2px #00000069 ;
+  width: 90%;
+  height: 40px;
+  font-weight: bold;
+  font-size: 1.1em;
+  
+}
+
+i{
+  
+  font-size: 18px;
+  color: white ;
+  
+}
+
+
+
+a{
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+
+
+span{
+  color: #e1e1e1bf;
+  
+}
+
+
+
+
+@media screen and (min-width:710px){
+  form{
+    width: 80%;
+    max-width: 800px;
+   
+  }
+  
+  button{
+    height: 60px;
+    width: 75%;
+  }
+}
+
